@@ -5,13 +5,13 @@ fn main() {
     print!("Input : x = ");
     io::stdout().flush().unwrap();
     io::stdin().read_line(&mut input).expect("Failed to read!!!");
-    let number:i32=input.trim().parse().expect("Please Type A Number!!!");
+    let x : i32=input.trim().parse().expect("Please Type A Number!!!");
     
-    for i in (1..=number).rev(){
+    for i in (1..=x).rev(){
         for _ in 0..=i-1{
             print!("  ");
         }
-        for _ in 0..=(number-i)*(2){
+        for _ in 0..=(x-i)*(2){
             print!("* ");
         }
         println!();

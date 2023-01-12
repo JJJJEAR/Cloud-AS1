@@ -20,12 +20,12 @@ fn main() {
     print!("Enter number: ");
     io::stdout().flush().unwrap();
     io::stdin().read_line(&mut input).expect("Failed to read!!!");
-    let number:i32=input.trim().parse().expect("Please Type A Number!!!");
+    let x:i32=input.trim().parse().expect("Please Type A Number!!!");
 
-    print!("{} =",number);
-    let mut cal:i32 = number;
-    if is_prime(number){
-        print!("{}", number);
+    print!("{} =",x);
+    let mut cal:i32 = x;
+    if is_prime(x){
+        print!("{}", x);
         println!();
         
     }else{
